@@ -3,7 +3,7 @@ import torch
 from torchvision import transforms
 
 
-model = vit_base()
+model = vit_base(img_size = 518, patch_size=14, init_values=1.0, ffn_layer = "mlp", block_chunks= 0)
 
 
 
